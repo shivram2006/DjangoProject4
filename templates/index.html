@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+<body>
+            <nav>This is navbar</nav>
+
+            {% block content %} <h1>This is home page</h1>{% endblock %}
+            {% block content2 %} <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, odio!</h1> {% endblock %}
+
+            <h1>{{name}}</h1>
+            <h1>The age is : {{data}}</h1>
+          <footer>this is footer</footer>
+
+          {% comment %} {% if 5 == 9  %}
+                <h1>Bharat mata ki jai</h1>
+          {% endif %} {% endcomment %}
+  
+          {% for i in l1 %}
+                <li>{{i}}</li>
+          {% endfor %}
+
+          
+
+
+</body>
+</html>
